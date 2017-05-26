@@ -27,7 +27,7 @@ public class MiaoshaCacheService {
 	 */
 	public boolean modifyAmount(String code , Long amount , Long total){
 		//原有>amount = 正常
-		//原有<amount = 0
+		//原有<amount = 0  
 		
 		//1.100 - 1000 = 0
 		//read 缓存-----------不行

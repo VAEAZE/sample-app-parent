@@ -34,7 +34,7 @@ public class MiaoshaCacheService {
 		//
 		Long result = client.decr(code, amount);
 		if(result>0){
-			client.incr(code+"_value", amount);
+			client.incr(code+"_value", amount);//已经买了多少
 			return true;
 		}else{
 			

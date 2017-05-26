@@ -32,8 +32,7 @@ public class GradeInfoService {
 	
 	public Map<String ,Object> query1(){
 		String key = "senvon";
-		Date expire = DateUtils.addSeconds(new Date(), 3);
-		
+		Date expire = DateUtils.addSeconds(new Date(), 3); 
 		return cacheTemplate.findCache(key, expire, new TypeReference<Map<String ,Object>>(){}	, new LoadCallback<Map<String ,Object>>(){
 			@Override
 			public Map<String, Object> load() {
